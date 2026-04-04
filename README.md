@@ -1,6 +1,10 @@
+⚠️⚠️ WORK IN PROGRESS ⚠️⚠️
+
 # Idiom  Explorer
 
 A GitHub-ready idiom quiz app for English learners.
+
+PRD: https://docs.google.com/document/d/1K8jF4ctX-xWFWC-PXmRopymXO44M_CCYdzB2S50OA8o/edit?usp=sharing
 
 ## Features
 - Random multiple-choice idiom quizzes
