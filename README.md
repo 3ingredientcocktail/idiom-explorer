@@ -1,6 +1,6 @@
-# UdeC Idiom Trainer
+# Idiom  Explorer
 
-An offline and GitHub-ready idiom quiz app for English learners at UdeC.
+A GitHub-ready idiom quiz app for English learners.
 
 ## Features
 - Random multiple-choice idiom quizzes
