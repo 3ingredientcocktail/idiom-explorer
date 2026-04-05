@@ -1,4 +1,4 @@
-⚠️⚠️ WORK IN PROGRESS ⚠️⚠️
+⚠️ WORK IN PROGRESS ⚠️
 
 PRD: https://docs.google.com/document/d/1K8jF4ctX-xWFWC-PXmRopymXO44M_CCYdzB2S50OA8o/edit?usp=sharing
 
