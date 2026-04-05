@@ -7,10 +7,23 @@ function shuffle(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
+// Google Analytics event helper
+function trackEvent(name, params = {}) {
+  if (typeof gtag !== "undefined") {
+    gtag("event", name, params);
+  }
+}
+
 async function loadIdioms() {
   const response = await fetch('idioms.json');
   idioms = await response.json();
+
   generateQuiz(20);
+
+  trackEvent("quiz_started", {
+    total_questions: 20
+  });
+
   renderQuestion();
 }
 
@@ -25,6 +38,13 @@ function renderQuestion() {
 
   if (currentQuestion >= questions.length) {
     const percentage = Math.round((score / questions.length) * 100);
+
+    trackEvent("quiz_completed", {
+      score: score,
+      total: questions.length,
+      percentage: percentage
+    });
+
     quiz.innerHTML = `
       <h2>Final Score: ${score}/${questions.length} (${percentage}%)</h2>
       <p>Great work exploring idioms! 💪</p>
@@ -60,11 +80,24 @@ function renderQuestion() {
       const allButtons = document.querySelectorAll('.option');
       allButtons.forEach(b => (b.disabled = true));
 
-      if (option === q.meaning) {
+      const isCorrect = option === q.meaning;
+
+      trackEvent("question_answered", {
+        idiom: q.idiom,
+        correct: isCorrect,
+        difficulty: q.difficulty
+      });
+
+      if (isCorrect) {
         btn.classList.add('correct');
         score++;
       } else {
         btn.classList.add('wrong');
+
+        // store missed idioms locally for future review mode
+        let missed = JSON.parse(localStorage.getItem("missedIdioms") || "[]");
+        missed.push(q.idiom);
+        localStorage.setItem("missedIdioms", JSON.stringify(missed));
 
         allButtons.forEach(button => {
           if (button.textContent === q.meaning) {
