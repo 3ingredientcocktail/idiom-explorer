@@ -24,6 +24,16 @@ cursor: pointer;
 text-align: left;
 }
 
+.correct {
+  background: #b7f7b7;
+  color: black;
+}
+
+.wrong {
+  background: #f7b7b7;
+  color: black;
+}
+
 #nextBtn {
 display: none;
 margin-top: 16px;
