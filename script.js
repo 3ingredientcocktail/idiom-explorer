@@ -36,16 +36,17 @@ function renderQuestion() {
 
   const wrongAnswers = shuffle(
     idioms.filter(i => i.meaning !== q.meaning)
-  ).slice(0, 3).map(i => i.meaning);
+  )
+    .slice(0, 3)
+    .map(i => i.meaning);
 
   const options = shuffle([q.meaning, ...wrongAnswers]);
 
   quiz.innerHTML = `
     <div class="meta">Question ${currentQuestion + 1} of ${questions.length}</div>
-    <h2>What does \"${q.idiom}\" mean?</h2>
+    <h2>What does "${q.idiom}" mean?</h2>
     <p><em>${q.example}</em></p>
     <div id="options"></div>
-    <div id="feedback"></div>
   `;
 
   const optionsDiv = document.getElementById('options');
@@ -57,7 +58,7 @@ function renderQuestion() {
 
     btn.onclick = () => {
       const allButtons = document.querySelectorAll('.option');
-      allButtons.forEach(b => b.disabled = true);
+      allButtons.forEach(b => (b.disabled = true));
 
       if (option === q.meaning) {
         btn.classList.add('correct');
@@ -77,4 +78,11 @@ function renderQuestion() {
 
     optionsDiv.appendChild(btn);
   });
+}
+
+document.getElementById('nextBtn').onclick = () => {
+  currentQuestion++;
+  renderQuestion();
+};
+
 loadIdioms();
