@@ -2,29 +2,61 @@
   {
     "idiom": "Break the ice",
     "meaning": "Start a conversation comfortably",
-    "difficulty": "B1",
-    "category": "social",
-    "example": "He told a joke to break the ice."
+    "difficulty": "Easy",
+    "example": "He told a joke to break the ice at the party."
   },
   {
     "idiom": "Hit the books",
     "meaning": "Study hard",
-    "difficulty": "B1",
-    "category": "academic",
-    "example": "I need to hit the books before the exam."
+    "difficulty": "Easy",
+    "example": "I need to hit the books before tomorrow's test."
   },
   {
     "idiom": "Spill the beans",
     "meaning": "Reveal a secret",
-    "difficulty": "B2",
-    "category": "conversation",
-    "example": "She spilled the beans about the surprise."
+    "difficulty": "Easy",
+    "example": "She spilled the beans about the surprise birthday party."
   },
   {
-    "idiom": "Under the weather",
-    "meaning": "Feeling sick",
-    "difficulty": "B1",
-    "category": "health",
-    "example": "I'm feeling under the weather today."
+    "idiom": "Back to square one",
+    "meaning": "Start over from the beginning",
+    "difficulty": "Intermediate",
+    "example": "The prototype failed, so we're back to square one."
+  },
+  {
+    "idiom": "Burn the midnight oil",
+    "meaning": "Work late into the night",
+    "difficulty": "Intermediate",
+    "example": "She burned the midnight oil finishing her essay."
+  },
+  {
+    "idiom": "Bite the bullet",
+    "meaning": "Accept something difficult",
+    "difficulty": "Intermediate",
+    "example": "He bit the bullet and apologized first."
+  },
+  {
+    "idiom": "Once in a blue moon",
+    "meaning": "Very rarely",
+    "difficulty": "Easy",
+    "example": "I only eat fast food once in a blue moon."
+  },
+  {
+    "idiom": "Cost an arm and a leg",
+    "meaning": "Be very expensive",
+    "difficulty": "Easy",
+    "example": "That new phone cost an arm and a leg."
+  },
+  {
+    "idiom": "The ball is in your court",
+    "meaning": "It is your decision now",
+    "difficulty": "Intermediate",
+    "example": "I've given you the offer; now the ball is in your court."
+  },
+  {
+    "idiom": "Add fuel to the fire",
+    "meaning": "Make a bad situation worse",
+    "difficulty": "Hard",
+    "example": "His angry comment added fuel to the fire."
   }
 ]
