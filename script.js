@@ -27,7 +27,7 @@ function renderQuestion() {
     const percentage = Math.round((score / questions.length) * 100);
     quiz.innerHTML = `
       <h2>Final Score: ${score}/${questions.length} (${percentage}%)</h2>
-      <p>Great work exploring idioms 🌎</p>
+      <p>Great work exploring idioms! 💪</p>
     `;
     return;
   }
