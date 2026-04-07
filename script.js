@@ -346,6 +346,20 @@ async function getTopScores() {
   return snapshot.docs.map(doc => doc.data());
 }
 
+async function saveScore(tag, score) {
+  try {
+    await db.collection("scores").add({
+      tag: tag,
+      score: score,
+      mode: "timed_60",
+      timestamp: Date.now()
+    });
+  } catch (e) {
+    console.error("Error saving score:", e);
+    throw e; // important so submitScore catches it
+  }
+}
+
 async function submitScore() {
   const tagInput = document.getElementById("playerTag");
   let tag = tagInput.value.trim().toUpperCase();
