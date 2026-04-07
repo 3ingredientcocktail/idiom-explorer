@@ -357,6 +357,10 @@ async function submitScore() {
   if (tag.length < 2) {
     alert("Enter at least 2 characters");
     return;
+
+  const btn = event.target;
+  btn.disabled = true;
+  btn.textContent = "Saving...";
   }
 
   if (tag.length > 5) {
@@ -365,18 +369,33 @@ async function submitScore() {
 
   await saveScore(tag, score);
 
+  showLeaderboard(tag, score); // pass player info
+}
+
+  await saveScore(tag, score);
+
   showLeaderboard();
 }
 
-async function showLeaderboard() {
+async function showLeaderboard(playerTag, playerScore) {
   const scores = await getTopScores();
 
   const leaderboardDiv = document.getElementById("leaderboard");
 
+  const medals = ["🥇", "🥈", "🥉"];
+
   leaderboardDiv.innerHTML = `
     <h3>🏆 Top 10</h3>
     <ol>
-      ${scores.map(s => `<li>${s.tag} — ${s.score}</li>`).join("")}
+      ${scores.map((s, i) => {
+        const medal = medals[i] || `${i + 1}.`;
+        const isPlayer = s.tag === playerTag && s.score === playerScore;
+
+        return `<li style="${isPlayer ? 'font-weight:bold; color:#2ecc71;' : ''}">
+          ${medal} ${s.tag} — ${s.score}
+          ${isPlayer ? ' 👈 YOU' : ''}
+        </li>`;
+      }).join("")}
     </ol>
   `;
 }
