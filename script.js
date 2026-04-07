@@ -318,7 +318,7 @@ function endArcade() {
 
     <input id="playerTag" maxlength="5" placeholder="Your tag (e.g. PZT)" />
     <br/><br/>
-    <button onclick="submitScore()">Submit Score</button>
+    <button onclick="submitScore(event)">Submit Score</button>
     <button onclick="startArcade()">Play Again</button>
     <button onclick="showView('homeView')">Home</button>
 
