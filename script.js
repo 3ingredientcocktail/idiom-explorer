@@ -350,17 +350,20 @@ async function saveScore(tag, score) {
   }
 }
 
-async function submitScore() {
+async function submitScore(event) {
+  const btn = event.target;
+
+  btn.disabled = true;
+  btn.textContent = "Saving...";
+
   const tagInput = document.getElementById("playerTag");
   let tag = tagInput.value.trim().toUpperCase();
 
   if (tag.length < 2) {
     alert("Enter at least 2 characters");
+    btn.disabled = false;
+    btn.textContent = "Submit Score";
     return;
-
-  const btn = event.target;
-  btn.disabled = true;
-  btn.textContent = "Saving...";
   }
 
   if (tag.length > 5) {
@@ -369,10 +372,9 @@ async function submitScore() {
 
   await saveScore(tag, score);
 
-  showLeaderboard(tag, score); // pass player info
+  showLeaderboard(tag, score);
 }
 
-  await saveScore(tag, score);
 
   showLeaderboard();
 }
