@@ -3,32 +3,33 @@ let questions = [];
 let currentQuestion = 0;
 let score = 0;
 
-// NEW STATE
-let mode = "learning"; // "learning" or "arcade"
+// MODE STATE
+let mode = "learning";
 let timeLeft = 60;
 let timerInterval = null;
+
+// ------------------------
 
 function shuffle(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-// Google Analytics event helper
+// Google Analytics
 function trackEvent(name, params = {}) {
   if (typeof gtag !== "undefined") {
     gtag("event", name, params);
   }
 }
 
+// ------------------------
+// LOAD DATA
+// ------------------------
+
 async function loadIdioms() {
   const response = await fetch('idioms.json');
   idioms = await response.json();
 
-  // Start on home screen instead of auto-start
   showView("homeView");
-}
-
-function generateQuiz(total) {
-  questions = shuffle(idioms).slice(0, total);
 }
 
 // ------------------------
@@ -44,7 +45,7 @@ function showView(view) {
 }
 
 // ------------------------
-// MODE STARTERS
+// RESET
 // ------------------------
 
 function resetGame() {
@@ -58,6 +59,10 @@ function resetGame() {
   document.getElementById("timer").textContent = "";
   document.getElementById("progress").textContent = "";
 }
+
+// ------------------------
+// START MODES
+// ------------------------
 
 function startLearning() {
   mode = "learning";
@@ -84,12 +89,14 @@ function startArcade() {
 
   showView("quizView");
 
+  document.getElementById("nextBtn").style.display = "none";
+
   startTimer();
   nextArcadeQuestion();
 }
 
 // ------------------------
-// TIMER (ARCADE)
+// TIMER
 // ------------------------
 
 function startTimer() {
@@ -107,8 +114,12 @@ function startTimer() {
 }
 
 // ------------------------
-// LEARNING MODE (UNCHANGED CORE)
+// LEARNING MODE
 // ------------------------
+
+function generateQuiz(total) {
+  questions = shuffle(idioms).slice(0, total);
+}
 
 function renderQuestion() {
   const quiz = document.getElementById('quiz');
@@ -139,7 +150,6 @@ function renderQuestion() {
 
   const q = questions[currentQuestion];
 
-  // UI updates
   document.getElementById("progress").textContent =
     `Q ${currentQuestion + 1}/${questions.length}`;
   document.getElementById("score").textContent =
@@ -255,11 +265,36 @@ function renderArcadeQuestion(q) {
         score++;
       }
 
-      nextArcadeQuestion(); // instant loop
+      showFeedback(btn, isCorrect);
+
+      setTimeout(() => {
+        nextArcadeQuestion();
+      }, 150);
     };
 
     optionsDiv.appendChild(btn);
   });
+}
+
+// ------------------------
+// FEEDBACK ANIMATION
+// ------------------------
+
+function showFeedback(element, isCorrect) {
+  const rect = element.getBoundingClientRect();
+
+  const feedback = document.createElement("div");
+  feedback.className = `feedback ${isCorrect ? "correct" : "wrong"}`;
+  feedback.textContent = isCorrect ? "✔️" : "❌";
+
+  feedback.style.left = rect.left + rect.width / 2 + "px";
+  feedback.style.top = rect.top + rect.height / 2 + "px";
+
+  document.body.appendChild(feedback);
+
+  setTimeout(() => {
+    feedback.remove();
+  }, 400);
 }
 
 // ------------------------
