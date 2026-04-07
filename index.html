@@ -17,9 +17,29 @@
 </head>
 <body>
 <div class="card">
-<h1>Idiom Explorer 🌎</h1>
-<div id="quiz"></div>
-<button id="nextBtn">Next</button>
+
+  <!-- HOME SCREEN -->
+  <div id="homeView">
+    <h1>Idiom Explorer 🌎</h1>
+    <button onclick="startLearning()">📘 Learning Mode</button>
+    <button onclick="startArcade()">⚡ Arcade Mode (60s)</button>
+  </div>
+
+  <!-- QUIZ VIEW (shared) -->
+  <div id="quizView" style="display:none;">
+    <div id="topBar">
+      <span id="progress"></span>
+      <span id="timer"></span>
+      <span id="score"></span>
+    </div>
+
+    <div id="quiz"></div>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <!-- END SCREEN -->
+  <div id="endView" style="display:none;"></div>
+
 </div>
 
 <script src="script.js"></script>
