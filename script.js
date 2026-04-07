@@ -315,8 +315,65 @@ function endArcade() {
   document.getElementById("endView").innerHTML = `
     <h2>⏱ Time's up!</h2>
     <h3>Your Score: ${score}</h3>
+
+    <input id="playerTag" maxlength="5" placeholder="Your tag (e.g. PZT)" />
+    <br/><br/>
+    <button onclick="submitScore()">Submit Score</button>
     <button onclick="startArcade()">Play Again</button>
     <button onclick="showView('homeView')">Home</button>
+
+    <div id="leaderboard" style="margin-top:20px;"></div>
+  `;
+}
+
+async function getTopScores() {
+  const snapshot = await db
+    .collection("scores")
+    .orderBy("score", "desc")
+    .limit(10)
+    .get();
+
+  return snapshot.docs.map(doc => doc.data());
+}
+
+async function getTopScores() {
+  const snapshot = await db
+    .collection("scores")
+    .orderBy("score", "desc")
+    .limit(10)
+    .get();
+
+  return snapshot.docs.map(doc => doc.data());
+}
+
+async function submitScore() {
+  const tagInput = document.getElementById("playerTag");
+  let tag = tagInput.value.trim().toUpperCase();
+
+  if (tag.length < 2) {
+    alert("Enter at least 2 characters");
+    return;
+  }
+
+  if (tag.length > 5) {
+    tag = tag.slice(0, 5);
+  }
+
+  await saveScore(tag, score);
+
+  showLeaderboard();
+}
+
+async function showLeaderboard() {
+  const scores = await getTopScores();
+
+  const leaderboardDiv = document.getElementById("leaderboard");
+
+  leaderboardDiv.innerHTML = `
+    <h3>🏆 Top 10</h3>
+    <ol>
+      ${scores.map(s => `<li>${s.tag} — ${s.score}</li>`).join("")}
+    </ol>
   `;
 }
 
