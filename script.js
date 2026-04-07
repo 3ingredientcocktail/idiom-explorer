@@ -336,16 +336,6 @@ async function getTopScores() {
   return snapshot.docs.map(doc => doc.data());
 }
 
-async function getTopScores() {
-  const snapshot = await db
-    .collection("scores")
-    .orderBy("score", "desc")
-    .limit(10)
-    .get();
-
-  return snapshot.docs.map(doc => doc.data());
-}
-
 async function saveScore(tag, score) {
   try {
     await db.collection("scores").add({
