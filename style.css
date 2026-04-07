@@ -49,6 +49,19 @@ button {
   cursor: pointer;
 }
 
+.arcade-feedback {
+  position: absolute;
+  animation: floatFade 0.35s ease-out forwards;
+}
+
+.option {
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.option:active {
+  transform: scale(0.97);
+}
+
 #nextBtn {
 display: none;
 margin-top: 16px;
