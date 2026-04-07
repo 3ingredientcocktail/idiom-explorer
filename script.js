@@ -383,19 +383,19 @@ async function showLeaderboard(playerTag, playerScore) {
 
   const medals = ["🥇", "🥈", "🥉"];
 
+  const listItems = scores.map((s, i) => {
+    const medal = medals[i] || `${i + 1}.`;
+    const isPlayer = s.tag === playerTag && s.score === playerScore;
+
+    return `<li style="${isPlayer ? 'font-weight:bold; color:#2ecc71;' : ''}">
+      ${medal} ${s.tag} — ${s.score}
+      ${isPlayer ? ' 👈 YOU' : ''}
+    </li>`;
+  }).join("");
+
   leaderboardDiv.innerHTML = `
     <h3>🏆 Top 10</h3>
-    <ol>
-      ${scores.map((s, i) => {
-        const medal = medals[i] || `${i + 1}.`;
-        const isPlayer = s.tag === playerTag && s.score === playerScore;
-
-        return `<li style="${isPlayer ? 'font-weight:bold; color:#2ecc71;' : ''}">
-          ${medal} ${s.tag} — ${s.score}
-          ${isPlayer ? ' 👈 YOU' : ''}
-        </li>`;
-      }).join("")}
-    </ol>
+    <ol>${listItems}</ol>
   `;
 }
 
