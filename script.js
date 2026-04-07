@@ -376,9 +376,6 @@ async function submitScore(event) {
 }
 
 
-  showLeaderboard();
-}
-
 async function showLeaderboard(playerTag, playerScore) {
   const scores = await getTopScores();
 
