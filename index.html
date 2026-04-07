@@ -41,7 +41,23 @@
   <div id="endView" style="display:none;"></div>
 
 </div>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
 
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCxpXsB4aeI348xdyHPlzMg3eseqV0ad5M",
+    authDomain: "idiom-explorer-3b9f8.firebaseapp.com",
+    projectId: "idiom-explorer-3b9f8",
+    storageBucket: "idiom-explorer-3b9f8.firebasestorage.app",
+    messagingSenderId: "365151281384",
+    appId: "1:365151281384:web:cd2c34aa04156a6cf6e95d"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
