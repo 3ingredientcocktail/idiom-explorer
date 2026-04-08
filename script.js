@@ -7,6 +7,7 @@ let score = 0;
 let mode = "learning";
 let timeLeft = 60;
 let timerInterval = null;
+let lives = 3; // ❤️ NEW
 
 // ------------------------
 
@@ -52,6 +53,7 @@ function resetGame() {
   currentQuestion = 0;
   score = 0;
   timeLeft = 60;
+  lives = 3; // ❤️ RESET LIVES
 
   clearInterval(timerInterval);
 
@@ -101,11 +103,11 @@ function startArcade() {
 
 function startTimer() {
   const timerEl = document.getElementById("timer");
-  timerEl.textContent = `⏱ ${timeLeft}s`;
+  timerEl.textContent = `⏱ ${timeLeft}s | ❤️ ${lives}`;
 
   timerInterval = setInterval(() => {
     timeLeft--;
-    timerEl.textContent = `⏱ ${timeLeft}s`;
+    timerEl.textContent = `⏱ ${timeLeft}s | ❤️ ${lives}`;
 
     if (timeLeft <= 0) {
       endArcade();
@@ -229,7 +231,7 @@ function renderArcadeQuestion(q) {
   const quiz = document.getElementById("quiz");
 
   document.getElementById("score").textContent =
-    `Score: ${score}`;
+    `Score: ${score} | ❤️ ${lives}`;
 
   const wrongAnswers = shuffle(
     idioms.filter(i => i.meaning !== q.meaning)
@@ -263,9 +265,17 @@ function renderArcadeQuestion(q) {
 
       if (isCorrect) {
         score++;
+      } else {
+        lives--; // ❤️ LOSE LIFE
       }
 
       showFeedback(btn, isCorrect);
+
+      // 💀 END IF OUT OF LIVES
+      if (lives <= 0) {
+        endArcade();
+        return;
+      }
 
       setTimeout(() => {
         nextArcadeQuestion();
@@ -310,10 +320,12 @@ function endArcade() {
     duration: 60
   });
 
+  const message = timeLeft > 0 ? "💀 Out of lives!" : "⏱ Time's up!";
+
   showView("endView");
 
   document.getElementById("endView").innerHTML = `
-    <h2>⏱ Time's up!</h2>
+    <h2>${message}</h2>
     <h3>Your Score: ${score}</h3>
 
     <input id="playerTag" maxlength="5" placeholder="Your tag (e.g. PZT)" />
@@ -325,6 +337,10 @@ function endArcade() {
     <div id="leaderboard" style="margin-top:20px;"></div>
   `;
 }
+
+// ------------------------
+// LEADERBOARD (unchanged)
+// ------------------------
 
 async function getTopScores() {
   const snapshot = await db
@@ -346,7 +362,7 @@ async function saveScore(tag, score) {
     });
   } catch (e) {
     console.error("Error saving score:", e);
-    throw e; // important so submitScore catches it
+    throw e;
   }
 }
 
@@ -374,7 +390,6 @@ async function submitScore(event) {
 
   showLeaderboard(tag, score);
 }
-
 
 async function showLeaderboard(playerTag, playerScore) {
   const scores = await getTopScores();
