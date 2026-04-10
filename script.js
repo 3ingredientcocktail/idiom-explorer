@@ -40,6 +40,7 @@ async function loadIdioms() {
 function showView(view) {
   document.getElementById("homeView").style.display = "none";
   document.getElementById("quizView").style.display = "none";
+  document.getElementById("leaderboardView").style.display = "none";
   document.getElementById("endView").style.display = "none";
 
   document.getElementById(view).style.display = "block";
@@ -349,6 +350,38 @@ async function getTopScores() {
     .get();
 
   return snapshot.docs.map(doc => doc.data());
+}
+
+async function openLeaderboard() {
+  showView("leaderboardView");
+  await renderHomeLeaderboard();
+}
+
+async function renderHomeLeaderboard() {
+  const scores = await getTopScores();
+  const leaderboardDiv = document.getElementById("homeLeaderboard");
+  const medals = ["🥇", "🥈", "🥉"];
+
+  if (!scores.length) {
+    leaderboardDiv.innerHTML = `
+      <p>No scores yet — be the first to set one!</p>
+    `;
+    return;
+  }
+
+  const listItems = scores.map((s, i) => {
+    const rankLabel = i < 3 ? medals[i] : "";
+
+    return `
+      <li>
+        ${rankLabel ? `${rankLabel} ` : ""}${s.tag} — ${s.score}
+      </li>
+    `;
+  }).join("");
+
+  leaderboardDiv.innerHTML = `
+    <ol>${listItems}</ol>
+  `;
 }
 
 async function saveScore(tag, score) {
