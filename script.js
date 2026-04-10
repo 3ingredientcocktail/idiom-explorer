@@ -230,8 +230,7 @@ function nextArcadeQuestion() {
 function renderArcadeQuestion(q) {
   const quiz = document.getElementById("quiz");
 
-  document.getElementById("score").textContent =
-    `Score: ${score} | ❤️ ${lives}`;
+  document.getElementById("score").textContent = `Score: ${score}`;
 
   const wrongAnswers = shuffle(
     idioms.filter(i => i.meaning !== q.meaning)
@@ -393,19 +392,26 @@ async function submitScore(event) {
 
 async function showLeaderboard(playerTag, playerScore) {
   const scores = await getTopScores();
-
   const leaderboardDiv = document.getElementById("leaderboard");
-
   const medals = ["🥇", "🥈", "🥉"];
 
+  if (!scores.length) {
+    leaderboardDiv.innerHTML = `
+      <h3>🏆 Top 10</h3>
+      <p>No scores yet — be the first!</p>
+    `;
+    return;
+  }
+
   const listItems = scores.map((s, i) => {
-    const medal = medals[i] || `${i + 1}.`;
+    const rankLabel = i < 3 ? medals[i] : "";
     const isPlayer = s.tag === playerTag && s.score === playerScore;
 
-    return `<li style="${isPlayer ? 'font-weight:bold; color:#2ecc71;' : ''}">
-      ${medal} ${s.tag} — ${s.score}
-      ${isPlayer ? ' 👈 YOU' : ''}
-    </li>`;
+    return `
+      <li style="${isPlayer ? "font-weight:bold; color:#2ecc71;" : ""}">
+        ${rankLabel ? `${rankLabel} ` : ""}${s.tag} — ${s.score}${isPlayer ? " 👈 YOU" : ""}
+      </li>
+    `;
   }).join("");
 
   leaderboardDiv.innerHTML = `
