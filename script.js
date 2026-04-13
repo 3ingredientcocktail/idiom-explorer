@@ -75,7 +75,7 @@ function startLearning() {
 
   trackEvent("quiz_started", {
     mode: "learning",
-    total_questions: 20
+    total_questions: 15
   });
 
   showView("quizView");
