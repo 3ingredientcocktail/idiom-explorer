@@ -71,7 +71,7 @@ function startLearning() {
   mode = "learning";
   resetGame();
 
-  generateQuiz(20);
+  generateQuiz(15);
 
   trackEvent("quiz_started", {
     mode: "learning",
