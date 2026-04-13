@@ -7,7 +7,11 @@ let score = 0;
 let mode = "learning";
 let timeLeft = 60;
 let timerInterval = null;
-let lives = 3; // ❤️ NEW
+let lives = 3;
+
+// AUDIO STATE
+let arcadeMusic = null;
+let musicEnabled = false;
 
 // ------------------------
 
@@ -23,11 +27,68 @@ function trackEvent(name, params = {}) {
 }
 
 // ------------------------
+// AUDIO
+// ------------------------
+
+function initAudio() {
+  arcadeMusic = document.getElementById("arcadeMusic");
+
+  if (!arcadeMusic) return;
+
+  arcadeMusic.volume = 0.35;
+  arcadeMusic.loop = true;
+
+  updateMusicButton();
+}
+
+function updateMusicButton() {
+  const btn = document.getElementById("musicToggle");
+  if (!btn) return;
+
+  btn.textContent = musicEnabled ? "🔊" : "🔇";
+}
+
+async function startArcadeMusic() {
+  if (!arcadeMusic || !musicEnabled) return;
+
+  try {
+    arcadeMusic.currentTime = 0;
+    await arcadeMusic.play();
+  } catch (err) {
+    console.warn("Music playback blocked:", err);
+  }
+}
+
+function stopArcadeMusic() {
+  if (!arcadeMusic) return;
+
+  arcadeMusic.pause();
+  arcadeMusic.currentTime = 0;
+}
+
+async function toggleMusic() {
+  musicEnabled = !musicEnabled;
+  updateMusicButton();
+
+  if (!arcadeMusic) return;
+
+  if (musicEnabled && mode === "arcade") {
+    try {
+      await arcadeMusic.play();
+    } catch (err) {
+      console.warn("Music playback blocked:", err);
+    }
+  } else {
+    arcadeMusic.pause();
+  }
+}
+
+// ------------------------
 // LOAD DATA
 // ------------------------
 
 async function loadIdioms() {
-  const response = await fetch('idioms.json');
+  const response = await fetch("idioms.json");
   idioms = await response.json();
 
   showView("homeView");
@@ -43,6 +104,11 @@ function showView(view) {
   document.getElementById("leaderboardView").style.display = "none";
   document.getElementById("endView").style.display = "none";
 
+  // Stop music if leaving arcade
+  if (view !== "quizView" || mode !== "arcade") {
+    stopArcadeMusic();
+  }
+
   document.getElementById(view).style.display = "block";
 }
 
@@ -54,7 +120,7 @@ function resetGame() {
   currentQuestion = 0;
   score = 0;
   timeLeft = 60;
-  lives = 3; // ❤️ RESET LIVES
+  lives = 3;
 
   clearInterval(timerInterval);
 
@@ -92,6 +158,8 @@ function startArcade() {
 
   showView("quizView");
 
+  startArcadeMusic();
+
   document.getElementById("nextBtn").style.display = "none";
 
   startTimer();
@@ -125,10 +193,10 @@ function generateQuiz(total) {
 }
 
 function renderQuestion() {
-  const quiz = document.getElementById('quiz');
-  const nextBtn = document.getElementById('nextBtn');
+  const quiz = document.getElementById("quiz");
+  const nextBtn = document.getElementById("nextBtn");
 
-  nextBtn.style.display = 'none';
+  nextBtn.style.display = "none";
 
   if (currentQuestion >= questions.length) {
     const percentage = Math.round((score / questions.length) * 100);
@@ -172,15 +240,15 @@ function renderQuestion() {
     <div id="options"></div>
   `;
 
-  const optionsDiv = document.getElementById('options');
+  const optionsDiv = document.getElementById("options");
 
   options.forEach(option => {
-    const btn = document.createElement('button');
-    btn.className = 'option';
+    const btn = document.createElement("button");
+    btn.className = "option";
     btn.textContent = option;
 
     btn.onclick = () => {
-      const allButtons = document.querySelectorAll('.option');
+      const allButtons = document.querySelectorAll(".option");
       allButtons.forEach(b => (b.disabled = true));
 
       const isCorrect = option === q.meaning;
@@ -193,10 +261,10 @@ function renderQuestion() {
       });
 
       if (isCorrect) {
-        btn.classList.add('correct');
+        btn.classList.add("correct");
         score++;
       } else {
-        btn.classList.add('wrong');
+        btn.classList.add("wrong");
 
         let missed = JSON.parse(localStorage.getItem("missedIdioms") || "[]");
         missed.push(q.idiom);
@@ -204,7 +272,7 @@ function renderQuestion() {
 
         allButtons.forEach(button => {
           if (button.textContent === q.meaning) {
-            button.classList.add('correct');
+            button.classList.add("correct");
           }
         });
       }
@@ -212,7 +280,7 @@ function renderQuestion() {
       document.getElementById("score").textContent =
         `Score: ${score}`;
 
-      nextBtn.style.display = 'inline-block';
+      nextBtn.style.display = "inline-block";
     };
 
     optionsDiv.appendChild(btn);
@@ -266,12 +334,11 @@ function renderArcadeQuestion(q) {
       if (isCorrect) {
         score++;
       } else {
-        lives--; // ❤️ LOSE LIFE
+        lives--;
       }
 
       showFeedback(btn, isCorrect);
 
-      // 💀 END IF OUT OF LIVES
       if (lives <= 0) {
         endArcade();
         return;
@@ -313,6 +380,7 @@ function showFeedback(element, isCorrect) {
 
 function endArcade() {
   clearInterval(timerInterval);
+  stopArcadeMusic();
 
   trackEvent("quiz_completed", {
     score: score,
@@ -339,7 +407,7 @@ function endArcade() {
 }
 
 // ------------------------
-// LEADERBOARD (unchanged)
+// LEADERBOARD
 // ------------------------
 
 async function getTopScores() {
@@ -455,9 +523,10 @@ async function showLeaderboard(playerTag, playerScore) {
 
 // ------------------------
 
-document.getElementById('nextBtn').onclick = () => {
+document.getElementById("nextBtn").onclick = () => {
   currentQuestion++;
   renderQuestion();
 };
 
+initAudio();
 loadIdioms();
