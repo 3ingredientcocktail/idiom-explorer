@@ -66,6 +66,15 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
 </script>
+
+<audio id="arcadeMusic" loop preload="auto">
+  <source src="arcade-music.mp3" type="audio/mpeg" />
+</audio>
+
+<button id="musicToggle" onclick="toggleMusic()" aria-label="Toggle music">
+  🔇
+</button>
+  
 <script src="script.js"></script>
 </body>
 </html>
