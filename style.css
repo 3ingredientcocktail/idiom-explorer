@@ -108,6 +108,7 @@ button {
   background: white;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   z-index: 1000;
+  display: none;
 }
 
 #musicToggle:hover {
