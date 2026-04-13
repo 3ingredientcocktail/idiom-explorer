@@ -83,6 +83,18 @@ async function toggleMusic() {
   }
 }
 
+// 👇 ONLY SHOW BUTTON DURING ARCADE GAMEPLAY
+function updateMusicVisibility() {
+  const btn = document.getElementById("musicToggle");
+  if (!btn) return;
+
+  const shouldShow =
+    mode === "arcade" &&
+    document.getElementById("quizView").style.display === "block";
+
+  btn.style.display = shouldShow ? "block" : "none";
+}
+
 // ------------------------
 // LOAD DATA
 // ------------------------
@@ -104,12 +116,15 @@ function showView(view) {
   document.getElementById("leaderboardView").style.display = "none";
   document.getElementById("endView").style.display = "none";
 
-  // Stop music if leaving arcade
+  // Stop music if leaving arcade gameplay
   if (view !== "quizView" || mode !== "arcade") {
     stopArcadeMusic();
   }
 
   document.getElementById(view).style.display = "block";
+
+  // 👇 Centralized control
+  updateMusicVisibility();
 }
 
 // ------------------------
