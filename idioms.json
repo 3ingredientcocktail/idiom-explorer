@@ -1,158 +1,751 @@
 [
   {
-    "idiom": "Top dog",
-    "meaning": "Most important person.",
+    "idiom": "Break the ice",
+    "meaning": "Start a conversation comfortably",
     "difficulty": "Easy",
-    "example": "After years of hard work, she finally became the top dog at the accounting firm."
+    "example": "Eva told a joke to break the ice at the party."
   },
   {
-    "idiom": "Tough cookie",
-    "meaning": "Very determined person.",
-    "difficulty": "Easy",
-    "example": "Behind that sweet smile, there lies one tough cookie."
+    "idiom": "Hit the books",
+    "meaning": "Study hard",
+    "difficulty": "Easqy",
+    "example": "I need to hit the books before tomorrow's test."
   },
   {
-    "idiom": "Tricks of the trade",
-    "meaning": "Clever or expert way of doing something.",
+    "idiom": "Spill the beans",
+    "meaning": "Reveal a secret",
+    "difficulty": "Easy",
+    "example": "Roxana spilled the beans about the surprise birthday party."
+  },
+  {
+    "idiom": "Under the weather",
+    "meaning": "Feeling sick",
+    "difficulty": "Easy",
+    "example": "I'm a bit under the weather today, so I'll stay home."
+  },
+  {
+    "idiom": "Piece of cake",
+    "meaning": "Very easy",
+    "difficulty": "Easy",
+    "example": "That vocabulary quiz was a piece of cake!"
+  },
+  {
+    "idiom": "Once in a blue moon",
+    "meaning": "Very rarely",
+    "difficulty": "Easy",
+    "example": "We only eat out once in a blue moon."
+  },
+  {
+    "idiom": "Cost an arm and a leg",
+    "meaning": "Be very expensive",
+    "difficulty": "Easy",
+    "example": "That laptop cost an arm and a leg."
+  },
+  {
+    "idiom": "The ball is in your court",
+    "meaning": "It is your decision now",
     "difficulty": "Intermediate",
-    "example": "The head chef taught me a few tricks of the trade for chopping onions faster."
+    "example": "I've explained the options, so the ball is in your court."
   },
   {
-    "idiom": "True colors",
-    "meaning": "Someone's actual character.",
-    "difficulty": "Easy",
-    "example": "I thought Derek was a really sweet guy, but then he got mad and showed his true colors."
+    "idiom": "Back to square one",
+    "meaning": "Start over from the beginning",
+    "difficulty": "Intermediate",
+    "example": "The engine repair failed, so we're back to square one."
   },
   {
-    "idiom": "Turn back the hands of time",
-    "meaning": "Reverse something or go back to a time in the past.",
+    "idiom": "Burn the midnight oil",
+    "meaning": "Work late into the night",
+    "difficulty": "Intermediate",
+    "example": "Theresa burned the midnight oil finishing her thesis."
+  },
+  {
+    "idiom": "Bite the bullet",
+    "meaning": "Accept something difficult",
+    "difficulty": "Intermediate",
+    "example": "Nathan decided to bite the bullet and tell the boss he was quitting"
+  },
+  {
+    "idiom": "Add fuel to the fire",
+    "meaning": "Make a bad situation worse",
     "difficulty": "Hard",
-    "example": "Listening to this music really turns back the hands of time to my high school days."
+    "example": "Nico's sarcastic comment added fuel to the fire."
   },
   {
-    "idiom": "University of life",
-    "meaning": "Daily life and work where you learn more than you would through formal education.",
-    "difficulty": "Easy",
-    "example": "He is a graduate of the university of life; he knows how to handle any situation."
-  },
-  {
-    "idiom": "Until hell freezes over",
-    "meaning": "Something will never happen, no matter how hard or long you try for it to.",
+    "idiom": "A blessing in disguise",
+    "meaning": "Something good that seemed bad at first",
     "difficulty": "Intermediate",
-    "example": "I'll apologize to him when hell freezes over."
+    "example": "Missing the bus was a blessing in disguise because I met an old friend."
   },
   {
-    "idiom": "Up in smoke",
-    "meaning": "Something that ends before getting a result.",
-    "difficulty": "Easy",
-    "example": "Their dream of a beach wedding went up in smoke when the storm arrived."
-  },
-  {
-    "idiom": "Waiting in the wings",
-    "meaning": "Waiting for an opportunity to take action.",
+    "idiom": "Beat around the bush",
+    "meaning": "Avoid the main point",
     "difficulty": "Intermediate",
-    "example": "The vice president is waiting in the wings, ready to take over if necessary."
+    "example": "Stop beating around the bush and answer the question!"
   },
   {
-    "idiom": "Walk out on someone",
-    "meaning": "Leave a partner and end the relationship.",
-    "difficulty": "Intermediate",
-    "example": "She was devastated when her partner walked out on her after ten years."
-  },
-  {
-    "idiom": "Wasting time",
-    "meaning": "Doing something with no purpose.",
+    "idiom": "Better late than never",
+    "meaning": "Doing something late is better than not doing it",
     "difficulty": "Easy",
-    "example": "I'm not going to waste my time arguing with these people—they're never going to listen anyway."
+    "example": "Nacho finally submitted the assignment—better late than never."
   },
   {
-    "idiom": "Well-oiled machine",
-    "meaning": "Unit of people or a group of things working well together.",
+    "idiom": "Call it a day",
+    "meaning": "Stop working for now",
     "difficulty": "Easy",
-    "example": "The restaurant kitchen is like a well-oiled machine during the busy dinner rush."
+    "example": "We've done enough revision, let's call it a day."
   },
   {
-    "idiom": "Whale of a time",
-    "meaning": "Enjoying something thoroughly.",
+    "idiom": "Cut corners",
+    "meaning": "Do something cheaply or carelessly",
     "difficulty": "Intermediate",
-    "example": "The kids had a whale of a time playing at the water park all afternoon."
+    "example": "The builders cut corners on the renovations, and now the roof is leaking."
   },
   {
-    "idiom": "White as a sheet (or ghost)",
-    "meaning": "In a state of great fear or anxiety.",
+    "idiom": "Easy does it",
+    "meaning": "Proceed slowly and carefully",
+    "difficulty": "Easy",
+    "example": "Easy does it when you're carrying the wine bottles."
+  },
+  {
+    "idiom": "Get out of hand",
+    "meaning": "Become uncontrollable",
+    "difficulty": "Intermediate",
+    "example": "What began as a polite discussion quickly got out of hand, and everyone was shouting."
+  },
+  {
+    "idiom": "Hang in there",
+    "meaning": "Stay strong during difficulty",
+    "difficulty": "Easy",
+    "example": "Hang in there—final exams are almost over."
+  },
+  {
+    "idiom": "In hot water",
+    "meaning": "In trouble",
+    "difficulty": "Easy",
+    "example": "Mafe was in hot water after missing the deadline."
+  },
+  {
+    "idiom": "Jump the gun",
+    "meaning": "Act too soon",
+    "difficulty": "Intermediate",
+    "example": "Sebastian jumped the gun and announced the results early."
+  },
+  {
+    "idiom": "Keep an eye on",
+    "meaning": "Watch carefully",
+    "difficulty": "Easy",
+    "example": "Can you keep an eye on my bag?"
+  },
+  {
+    "idiom": "Let the cat out of the bag",
+    "meaning": "Reveal a secret accidentally",
+    "difficulty": "Intermediate",
+    "example": "Cristi let the cat out of the bag about Sam's wedding."
+  },
+  {
+    "idiom": "Miss the boat",
+    "meaning": "Miss an opportunity",
+    "difficulty": "Intermediate",
+    "example": "If you don't apply for that job soon, you'll miss the boat."
+  },
+  {
+    "idiom": "No pain, no gain",
+    "meaning": "Effort is required for success",
+    "difficulty": "Easy",
+    "example": "Angela kept practicing skateboarding—no pain, no gain."
+  },
+  {
+    "idiom": "On the same page",
+    "meaning": "In agreement",
+    "difficulty": "Easy",
+    "example": "Let's make sure the whole class is on the same page."
+  },
+  {
+    "idiom": "Pull someone's leg",
+    "meaning": "Joke with someone",
+    "difficulty": "Easy",
+    "example": "Relax! I'm just pulling your leg."
+  },
+  {
+    "idiom": "Speak of the devil",
+    "meaning": "The person just mentioned appears",
+    "difficulty": "Easy",
+    "example": "Speak of the devil—there's the professor now."
+  },
+  {
+    "idiom": "Take it with a grain of salt",
+    "meaning": "Be skeptical",
     "difficulty": "Hard",
-    "example": "After receiving the bad news, his face went as white as a ghost."
+    "example": "Take that rumor with a grain of salt."
   },
   {
-    "idiom": "White collar",
-    "meaning": "Office worker.",
-    "difficulty": "Easy",
-    "example": "Many white-collar workers were able to work from home during the pandemic."
-  },
-  {
-    "idiom": "White elephant",
-    "meaning": "Expensive item that's costly to maintain and not particularly useful.",
-    "difficulty": "Easy",
-    "example": "Inheriting that old mansion turned out to be a white elephant; the taxes and repairs are ruining me."
-  },
-  {
-    "idiom": "White lie",
-    "meaning": "Little or harmless lie told to be polite and avoid hurting someone's feelings.",
-    "difficulty": "Easy",
-    "example": "She told a white lie about liking the gift to spare her friend's feelings."
-  },
-  {
-    "idiom": "Whitewash",
-    "meaning": "Cover up or gloss over faults.",
-    "difficulty": "Easy",
-    "example": "They tried to whitewash the company's financial losses before the audit."
-  },
-  {
-    "idiom": "Whole nine yards",
-    "meaning": "Everything. All of it.",
-    "difficulty": "Easy",
-    "example": "For the party, she bought decorations, games, food—the whole nine yards."
-  },
-  {
-    "idiom": "With bells on",
-    "meaning": "When you are delighted and eager to go somewhere.",
-    "difficulty": "Easy",
-    "example": "She agreed to help organize the event with bells on, excited to be involved from the start."
-  },
-  {
-    "idiom": "Wooden spoon",
-    "meaning": "Imaginary prize for the last person in a race.",
-    "difficulty": "Easy",
-    "example": "Our local football team had a disastrous season and ended up taking the wooden spoon."
-  },
-  {
-    "idiom": "Works like a charm",
-    "meaning": "Works very well or as expected.",
+    "idiom": "Up in the air",
+    "meaning": "Undecided",
     "difficulty": "Intermediate",
-    "example": "I was worried about my computer issues, but a quick restart worked like a charm."
+    "example": "Our vacation plans are still up in the air."
   },
   {
-    "idiom": "Wouldn't be caught dead",
-    "meaning": "Would never like to do something.",
-    "difficulty": "Intermediate",
-    "example": "I wouldn't be caught dead wearing a dress like that – it's so old-fashioned."
-  },
-  {
-    "idiom": "Year in, year out",
-    "meaning": "Happens every year for many years in a row.",
-    "difficulty": "Intermediate",
-    "example": "Year in, year out, the festival attracts thousands of tourists."
-  },
-  {
-    "idiom": "Yellow-bellied",
-    "meaning": "Coward",
-    "difficulty": "Easy",
-    "example": "He's a yellow-bellied traitor!"
-  },
-  {
-    "idiom": "You can't teach an old dog new tricks",
-    "meaning": "People used to doing things a certain way are often unable to change their ways.",
+    "idiom": "Wrap your head around",
+    "meaning": "Understand something difficult",
     "difficulty": "Hard",
-    "example": "He's been driving that way for 30 years; you can't teach an old dog new tricks."
+    "example": "It took time to wrap my head around calculus. Math is hard!"
+  },
+  {
+    "idiom": "Your guess is as good as mine",
+    "meaning": "I do not know either",
+    "difficulty": "Easy",
+    "example": "Your guess is as good as mine about the exam date."
+  },
+  {
+    "idiom": "Zero in on",
+    "meaning": "Focus closely on",
+    "difficulty": "Intermediate",
+    "example": "The detectives zeroed in on the main suspect after reviewing the evidence."
+  },
+  {
+    "idiom": "Hit the nail on the head",
+    "meaning": "Describe exactly what is causing a situation",
+    "difficulty": "Intermediate",
+    "example": "You hit the nail on the head when you said I need a vacation. I'm exhausted!"
+  },
+  {
+    "idiom": "Go the extra mile",
+    "meaning": "Make extra effort",
+    "difficulty": "Intermediate",
+    "example": "Rafael is a great guy, he is always ready to go the extra mile for his friends."
+  },
+  {
+    "idiom": "Learn the ropes",
+    "meaning": "Learn how something works",
+    "difficulty": "Easy",
+    "example": "Once I learn the ropes at my new job, I won't be so nervous."
+  },
+  {
+    "idiom": "On thin ice",
+    "meaning": "In a risky situation",
+    "difficulty": "Intermediate",
+    "example": "Mikhail is on thin ice after missing another class."
+  },
+  {
+    "idiom": "Out of the blue",
+    "meaning": "Unexpectedly",
+    "difficulty": "Easy",
+    "example": "Ernesto called me out of the blue last night."
+  },
+  {
+    "idiom": "Put all your eggs in one basket",
+    "meaning": "Risk everything on one plan",
+    "difficulty": "Hard",
+    "example": "Don't put all your eggs in one basket—invest in a few different companies."
+  },
+  {
+    "idiom": "Rain check",
+    "meaning": "Postpone to another time",
+    "difficulty": "Easy",
+    "example": "Thanks for the invite, but can I take a rain check? I'm swamped with work."
+  },
+  {
+    "idiom": "Sit tight",
+    "meaning": "Wait patiently",
+    "difficulty": "Easy",
+    "example": "The doctor will be with you soon, just sit tight."
+  },
+  {
+    "idiom": "Take the plunge",
+    "meaning": "Do something bold after hesitation",
+    "difficulty": "Intermediate",
+    "example": "After months of saving, Natalia finally took the plunge and bought her first house."
+  },
+  {
+    "idiom": "Throw in the towel",
+    "meaning": "Give up",
+    "difficulty": "Intermediate",
+    "example": "After losing the election, Derek threw in the towel on his political career."
+  },
+  {
+    "idiom": "Through the roof",
+    "meaning": "Extremely high",
+    "difficulty": "Intermediate",
+    "example": "After the positive review, sales went through the roof."
+  },
+  {
+    "idiom": "Time flies",
+    "meaning": "Time passes quickly",
+    "difficulty": "Easy",
+    "example": "Time flies when you're having fun!"
+  },
+  {
+    "idiom": "Touch base",
+    "meaning": "Make brief contact",
+    "difficulty": "Intermediate",
+    "example": "I’ll touch base with the team before the meeting."
+  },
+  {
+    "idiom": "Under your nose",
+    "meaning": "In an obvious place",
+    "difficulty": "Easy",
+    "example": "I spent an hour looking for my keys, and they were right under my nose! I had them in my pocket!"
+  },
+  {
+    "idiom": "Water under the bridge",
+    "meaning": "A past issue no longer important",
+    "difficulty": "Intermediate",
+    "example": "We had a troubled past but that's all water under the bridge now."
+  },
+  {
+    "idiom": "Word of mouth",
+    "meaning": "Information spread by people talking",
+    "difficulty": "Easy",
+    "example": "Small businesses often rely on word of mouth instead of expensive advertising."
+  },
+  {
+    "idiom": "A tough pill to swallow",
+    "meaning": "A hard fact to accept",
+    "difficulty": "Hard",
+    "example": "Failing the interview was a tough pill to swallow."
+  },
+  {
+    "idiom": "At the drop of a hat",
+    "meaning": "Immediately without hesitation",
+    "difficulty": "Intermediate",
+    "example": "I'd quit my job and move to the beach at the drop of a hat if I could."
+  },
+  {
+    "idiom": "Bend over backwards",
+    "meaning": "Try very hard to help",
+    "difficulty": "Intermediate",
+    "example": "She bent over backwards to make sure the guests felt welcome."
+  },
+  {
+    "idiom": "By the book",
+    "meaning": "According to rules",
+    "difficulty": "Intermediate",
+    "example": "Bob is a great accountant. He does everything by the book."
+  },
+  {
+    "idiom": "Cross that bridge when you come to it",
+    "meaning": "Deal with a problem later",
+    "difficulty": "Hard",
+    "example": "We might not have enough money for the trip, but let's cross that bridge when we come to it."
+  },
+  {
+    "idiom": "Down to earth",
+    "meaning": "Practical and realistic",
+    "difficulty": "Easy",
+    "example": "He gave me some really down to earth advice on how to manage my debt."
+  },
+  {
+    "idiom": "Elephant in the room",
+    "meaning": "An obvious problem no one mentions",
+    "difficulty": "Hard",
+    "example": "We all sat in the living room trying to ignore the elephant in the room: that mom had left dad for another man."
+  },
+  {
+    "idiom": "Face the music",
+    "meaning": "Accept consequences",
+    "difficulty": "Intermediate",
+    "example": "If you commit a crime, eventually you will have to face the music."
+  },
+  {
+    "idiom": "Get the hang of it",
+    "meaning": "Learn how to do something",
+    "difficulty": "Easy",
+    "example": "Adam is finally getting the hang of skateboarding."
+  },
+  {
+    "idiom": "Give someone the cold shoulder",
+    "meaning": "Ignore someone deliberately",
+    "difficulty": "Intermediate",
+    "example": "Kevin tried to talk to Ashley at the party, but she gave him the cold shoulder all night."
+  },
+  {
+    "idiom": "Go down in flames",
+    "meaning": "Fail spectacularly",
+    "difficulty": "Hard",
+    "example": "The politican's career went down in flames after he was caught stealing charity money."
+  },
+  {
+    "idiom": "In the long run",
+    "meaning": "Eventually over time",
+    "difficulty": "Easy",
+    "example": "Buying a new car will save us money in the long run."
+  },
+  {
+    "idiom": "Keep your chin up",
+    "meaning": "Stay positive",
+    "difficulty": "Easy",
+    "example": "I know you didn't get the job, but keep your chin up—something better will come along."
+  },
+  {
+    "idiom": "Know the drill",
+    "meaning": "Know the routine",
+    "difficulty": "Easy",
+    "example": "No need for instructions, you all know the drill by now."
+  },
+  {
+    "idiom": "Leave no stone unturned",
+    "meaning": "Try every possible option",
+    "difficulty": "Hard",
+    "example": "The detective left no stone unturned in the investigation."
+  },
+  {
+    "idiom": "Make ends meet",
+    "meaning": "Have enough money to live",
+    "difficulty": "Intermediate",
+    "example": "Erika had to take a second job just to make ends meet."
+  },
+  {
+    "idiom": "Off the hook",
+    "meaning": "Freed from responsibility",
+    "difficulty": "Intermediate",
+    "example": "He thought he would have to pay the fine, but the officer let him off the hook"
+  },
+  {
+    "idiom": "On cloud nine",
+    "meaning": "Extremely happy",
+    "difficulty": "Easy",
+    "example": "Helen has been on cloud nine ever since she got that promotion at work."
+  },
+  {
+    "idiom": "Play it by ear",
+    "meaning": "Decide as you go",
+    "difficulty": "Intermediate",
+    "example": "Let's play it by ear depending on the weather. We may have to cancel the picnic."
+  },
+  {
+    "idiom": "Pull the plug",
+    "meaning": "Stop something completely",
+    "difficulty": "Hard",
+    "example": "She finally pulled the plug on her failing business."
+  },
+  {
+    "idiom": "See eye to eye",
+    "meaning": "Agree fully",
+    "difficulty": "Easy",
+    "example": "Democrats and Republicans will never see eye to eye."
+  },
+  {
+    "idiom": "Steal the show",
+    "meaning": "Be the most impressive part",
+    "difficulty": "Intermediate",
+    "example": "Heath Ledger as Joker stole the show in the Batman movie."
+  },
+  {
+    "idiom": "Take a rain check",
+    "meaning": "Postpone an invitation",
+    "difficulty": "Easy",
+    "example": "Thanks for the invite, but I'll have to take a rain check on dinner tonight—I have too much work."
+  },
+  {
+    "idiom": "Think outside the box",
+    "meaning": "Think creatively",
+    "difficulty": "Intermediate",
+    "example": "If you want to get noticed, you have to think outside the box."
+  },
+  {
+    "idiom": "Turn a blind eye",
+    "meaning": "Ignore deliberately",
+    "difficulty": "Hard",
+    "example": "Teachers were turning a blind eye to smoking in school."
+  },
+  {
+    "idiom": "Under pressure",
+    "meaning": "Feeling stressed by demands",
+    "difficulty": "Easy",
+    "example": "The company is under pressure to improve its environmental policy."
+  },
+  {
+    "idiom": "Walk on eggshells",
+    "meaning": "Act very carefully to avoid upsetting someone",
+    "difficulty": "Hard",
+    "example": "We have had to walk on eggshells ever since our boss got divorced. He's so quick to anger!"
+  },
+  {
+    "idiom": "A dime a dozen",
+    "meaning": "Very common",
+    "difficulty": "Intermediate",
+    "example": "Cafes in Concepción are a dime a dozen."
+  },
+  {
+    "idiom": "Ahead of the curve",
+    "meaning": "More advanced than others",
+    "difficulty": "Hard",
+    "example": "Alexander McQueen's fashion shows were always ahead of the curve."
+  },
+  {
+    "idiom": "All ears",
+    "meaning": "Listening attentively",
+    "difficulty": "Easy",
+    "example": "Tell me about your Europe trip! I'm all ears."
+  },
+  {
+    "idiom": "As good as it gets",
+    "meaning": "The best possible",
+    "difficulty": "Intermediate",
+    "example": "Sitting on this beach with a cold beer is truly as good as it gets."
+  },
+  {
+    "idiom": "Back on track",
+    "meaning": "Returning to the right path",
+    "difficulty": "Easy",
+    "example": "I skipped a few workouts last week, but I'm going to get back on track this week."
+  },
+  {
+    "idiom": "Behind the scenes",
+    "meaning": "Hidden from public view",
+    "difficulty": "Easy",
+    "example": "Amanda prefers working behind the scenes rather than being in the spotlight."
+  },
+  {
+    "idiom": "Blow off steam",
+    "meaning": "Release stress",
+    "difficulty": "Easy",
+    "example": "Jeremy goes to the gym to blow off steam."
+  },
+  {
+    "idiom": "Break even",
+    "meaning": "Neither lose nor gain money",
+    "difficulty": "Intermediate",
+    "example": "I sold the car for exactly what I paid for it, so I broke even on the deal."
+  },
+  {
+    "idiom": "Bring to light",
+    "meaning": "Reveal something hidden",
+    "difficulty": "Hard",
+    "example": "The government corruption was brought to light by a New York Times journalist."
+  },
+  {
+    "idiom": "By all means",
+    "meaning": "Certainly",
+    "difficulty": "Easy",
+    "example": "If you want to join our trip to Torres del Paine, by all means, come along!"
+  },
+  {
+    "idiom": "Clear the air",
+    "meaning": "Resolve tension",
+    "difficulty": "Intermediate",
+    "example": "I asked my supervisor to meet so I could clear the air about my recent absences."
+  },
+  {
+    "idiom": "Come in handy",
+    "meaning": "Be useful",
+    "difficulty": "Easy",
+    "example": "That umbrella will come in handy if it starts to rain later."
+  },
+  {
+    "idiom": "Draw the line",
+    "meaning": "Set a limit",
+    "difficulty": "Intermediate",
+    "example": "I'll try almost any food, but I draw the line at eating insects."
+  },
+  {
+    "idiom": "Get cold feet",
+    "meaning": "Become nervous before action",
+    "difficulty": "Intermediate",
+    "example": "I was going to try bungee jumping but I got cold feet."
+  },
+  {
+    "idiom": "Give it a shot",
+    "meaning": "Try something",
+    "difficulty": "Easy",
+    "example": "I have never tried skiing, but I’m going to give it a shot this weekend!"
+  },
+  {
+    "idiom": "Go with the flow",
+    "meaning": "Adapt to events as they happen",
+    "difficulty": "Easy",
+    "example": "I don't have any specific plans for the weekend; I'm just going to go with the flow."
+  },
+  {
+    "idiom": "Hit a wall",
+    "meaning": "Reach a point where progress stops",
+    "difficulty": "Hard",
+    "example": "After running 20 miles in the marathon, Jimmy hit a wall and had to stop."
+  },
+  {
+    "idiom": "In the same boat",
+    "meaning": "In the same situation",
+    "difficulty": "Easy",
+    "example": "None of us have any money, so we're all in the same boat."
+  },
+  {
+    "idiom": "Keep in mind",
+    "meaning": "Remember something important",
+    "difficulty": "Easy",
+    "example": "We don't have a job available right now, but we'll keep you in mind if a position opens up."
+  },
+  {
+    "idiom": "Make a long story short",
+    "meaning": "Summarize briefly",
+    "difficulty": "Easy",
+    "example": "Long story short, we missed the flight because the car got a flat tire."
+  },
+  {
+    "idiom": "No strings attached",
+    "meaning": "Without conditions",
+    "difficulty": "Intermediate",
+    "example": "We're giving away free T-shirts! No strings attached!"
+  },
+  {
+    "idiom": "On the fence",
+    "meaning": "Undecided between choices",
+    "difficulty": "Intermediate",
+    "example": "I'm on the fence about which car to buy."
+  },
+  {
+    "idiom": "Out of line",
+    "meaning": "Inappropriate or unacceptable",
+    "difficulty": "Intermediate",
+    "example": "His behavior at the meeting was totally out of line, and he was asked to leave."
+  },
+  {
+    "idiom": "Read between the lines",
+    "meaning": "Find the hidden meaning",
+    "difficulty": "Hard",
+    "example": "You have to read between the lines when reading poetry."
+  },
+  {
+    "idiom": "Ring a bell",
+    "meaning": "Sound familiar",
+    "difficulty": "Easy",
+    "example": "Does the name Patricia ring a bell?"
+  },
+  {
+    "idiom": "Rule of thumb",
+    "meaning": "General practical guideline",
+    "difficulty": "Hard",
+    "example": "It's a good rule of thumb to study a little every day so you don't stress later."
+  },
+  {
+    "idiom": "Saved by the bell",
+    "meaning": "Rescued at the last moment",
+    "difficulty": "Easy",
+    "example": "School was closed due to a snow day so I had an extra day to study for my exam. Saved by the bell!"
+  },
+  {
+    "idiom": "Smooth sailing",
+    "meaning": "Easy progress",
+    "difficulty": "Easy",
+    "example": "After getting through the traffic, it was smooth sailing all the way home."
+  },
+  {
+    "idiom": "Take with a pinch of salt",
+    "meaning": "Treat skeptically",
+    "difficulty": "Hard",
+    "example": "When reading rumors about celebrities, it's best to take them with a pinch of salt."
+  },
+  {
+    "idiom": "The last straw",
+    "meaning": "Final problem that causes action",
+    "difficulty": "Hard",
+    "example": "She's always been rude to me, but it was the last straw when she started insulting my mother."
+  },
+  {
+    "idiom": "Throw caution to the wind",
+    "meaning": "Act recklessly",
+    "difficulty": "Hard",
+    "example": "The hikers threw caution to the wind by climbing the mountain during the storm."
+  },
+  {
+    "idiom": "Up to speed",
+    "meaning": "Fully informed or competent",
+    "difficulty": "Intermediate",
+    "example": "I need to get you up to speed on the new project."
+  },
+  {
+    "idiom": "Wear many hats",
+    "meaning": "Have many roles",
+    "difficulty": "Intermediate",
+    "example": "She wears many hats: she's a doctor, a musician, and a writer."
+  },
+  {
+    "idiom": "You can say that again",
+    "meaning": "I strongly agree",
+    "difficulty": "Easy",
+    "example": "'I hate politicians. 'You can say that again!'"
+  },
+  {
+    "idiom": "Actions speak louder than words",
+    "meaning": "People's intentions can be judged better by what they do than what they say.",
+    "difficulty": "Intermediate",
+    "example": "John keeps promising to help, but actions speak louder than words, so I'll believe it when I see it."
+  },
+  {
+    "idiom": "Add insult to injury",
+    "meaning": "To further a loss with mockery or indignity; to worsen an unfavourable situation.",
+    "difficulty": "Intermediate",
+    "example": "My car broke down in the middle of nowhere, and then, to add insult to injury, it started to rain"
+  },
+  {
+    "idiom": "Against the clock",
+    "meaning": "Being rushed and having little time to complete something.",
+    "difficulty": "Easy",
+    "example": "Emergency services were working against the clock as the flood waters began to rise."
+  },
+  {
+    "idiom": "Ahead of time",
+    "meaning": "Something that happens early or before it is supposed to.",
+    "difficulty": "Easy",
+    "example": "We finished the project two days ahead of time."
+  },
+  {
+    "idiom": "Around the clock",
+    "meaning": "At any time of the day or night",
+    "difficulty": "Easy",
+    "example": "The patient required around the clock care after the surgery."
+  },
+  {
+    "idiom": "Around the corner",
+    "meaning": "Will happen soon.",
+    "difficulty": "Easy",
+    "example": "I can't believe it's already December; Christmas is just around the corner!."
+  },
+  {
+    "idiom": "Back to basics",
+    "meaning": "An approach that uses traditional ideas that have previously worked.",
+    "difficulty": "Easy",
+    "example": "The restaurant is getting back to basics by using fresh, simple, and few ingredients."
+  },
+  {
+    "idiom": "Back to the drawing board",
+    "meaning": "When an attempt fails and it's time to start all over.",
+    "difficulty": "Intermediate",
+    "example": "The client hated the proposal, so it’s back to the drawing board for us."
+  },
+  {
+    "idiom": "Bad apple",
+    "meaning": "Troublemaker or undesirable person in a group.",
+    "difficulty": "Easy",
+    "example": "The gym is a big place with lots of people, so don't let one bad apple ruin your experience."
+  },
+  {
+    "idiom": "Barking up the wrong tree",
+    "meaning": "Looking in the wrong place. Accusing the wrong person.",
+    "difficulty": "Intermediate",
+    "example": "If you’re asking me for legal advice, you’re barking up the wrong tree, bro. I’m a musician."
+  },
+  {
+    "idiom": "Beat the clock",
+    "meaning": "Do something quickly before it's too late.",
+    "difficulty": "Easy",
+    "example": "We managed to beat the clock and arrived at the airport just minutes before boarding closed."
+  },
+  {
+    "idiom": "Bee in one's bonnet",
+    "meaning": "Carrying and idea that's constantly in your thoughts.",
+    "difficulty": "Intermediate",
+    "example": "Mom has a bee in her bonnet about remodeling the kitchen before summer."
+  },
+  {
+    "idiom": "Behind the times",
+    "meaning": "Being old-fashioned.",
+    "difficulty": "Easy",
+    "example": "Elaine so behind the times; she refuses to use a smartphone."
+  },
+  {
+    "idiom": "Bells and whistles",
+    "meaning": "Lots of desirable features.",
+    "difficulty": "Easy",
+    "example": "The new Rolls Royce comes with all the bells and whistles... including massage seats and a built-in espresso maker."
   }
-]
