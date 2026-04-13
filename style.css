@@ -96,3 +96,20 @@ button {
     transform: translate(-50%, -50%) translateY(-30px) scale(1);
   }
 }
+
+#musicToggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+#musicToggle:hover {
+  transform: scale(1.05);
+}
