@@ -757,9 +757,9 @@
   },
   {
     "idiom": "Best thing since sliced bread",
-    "meaning": "A good invention or innovation. A good idea or plan.",
+    "meaning": "A good invention or innovation",
     "difficulty": "Intermediate",
-    "example": "These new app is the best thing since sliced bread!"
+    "example": "This new app is the best thing since sliced bread!"
   },
   {
     "idiom": "Bide one's time",
@@ -949,8 +949,140 @@
   },
   {
     "idiom": "Chase rainbows",
-    "meaning": "Try to achieve something that is very difficult, impossible or very desirable.",
+    "meaning": "Try to achieve something that is very difficult, impossible or very desirable",
     "difficulty": "Easy",
     "example": "Eugene has been chasing rainbows, thinking he'll become a millionaire overnight."
+  },
+  {
+    "idiom": "Chase your tail",
+    "meaning": "Spend a lot of time and energy but achieve nothing",
+    "difficulty": "Easy",
+    "example": "Stop changing the PowerPoint colors! You're just chasing your tail and going to miss the deadline."
+  },
+  {
+    "idiom": "Cheesy",
+    "meaning": "Tacky, silly, inauthentic or cheap",
+    "difficulty": "Easy",
+    "example": "That's the cheesiest pick-up line I've ever heard."
+  },
+  {
+    "idiom": "Close to home",
+    "meaning": "A comment that is true and makes you uncomfortable",
+    "difficulty": "Easy",
+    "example": "The message the film conveyed struck so hard and so close to home that it moved me to tears."
+  },
+  {
+    "idiom": "Coming of age",
+    "meaning": "When someonne develops and reaches maturity",
+    "difficulty": "Easy",
+    "example": "Superbad is one of the funniest coming of age movies."
+  },
+  {
+    "idiom": "Cook someone's goose",
+    "meaning": "Spoil the person's chance of success",
+    "difficulty": "Easy",
+    "example": "Universidad de Concepción was already trailing, and that last goal really cooked their goose."
+  },
+  {
+    "idiom": "Copycat",
+    "meaning": "Someone who copies the work of another",
+    "difficulty": "Easy",
+    "example": "She bought the same dress as me; she's such a copycat."
+  },
+  {
+    "idiom": "Couch potato",
+    "meaning": "Lazy person who watches too much TV",
+    "difficulty": "Easy",
+    "example": "My dad is such a couch potato. He's even trained the dog to brings him beers from the fridge!"
+  },
+  {
+    "idiom": "Cover a lot of ground",
+    "meaning": "Complete a lot of work or a wide range of things",
+    "difficulty": "Intermediate",
+    "example": "Guys, that was a great study session. We covered a lot of ground."
+  },
+  {
+    "idiom": "Crack of dawn",
+    "meaning": "Very early in the morning",
+    "difficulty": "Easy",
+    "example": "Jerrod wakes up at the crack of dawn for football practice."
+  },
+  {
+    "idiom": "Crunch time",
+    "meaning": "A point at which something difficult must be done",
+    "difficulty": "Easy",
+    "example": "Steven plays well without pressure, but can he produce at crunch time?"
+  },
+  {
+    "idiom": "Cry over spilt milk",
+    "meaning": "Complain about a loss from the past",
+    "difficulty": "Intermediate",
+    "example": "There's no point crying over spilt milk. Sure, Alonso cheated on you but it's time to get over it."
+  },
+  {
+    "idiom": "Curiosity killed the cat",
+    "meaning": "Being inquisitive can lead you into an unpleasant or dangerous situation",
+    "difficulty": "Intermediate",
+    "example": "Let's not try to find out what's in the abandoned house. Curiosity killed the cat."
+  },
+  {
+    "idiom": "Cut one's own throat",
+    "meaning": "Doing something that will cause your own failure or downfall",
+    "difficulty": "Intermediate",
+    "example": "Corrupt politicians are cutting their own throat."
+  },
+  {
+    "idiom": "Pass gas",
+    "meaning": "To fart",
+    "difficulty": "Easy",
+    "example": "I couldn't concentrate on the exam because the guy in front of me kept passing gas!"
+  },
+  {
+    "idiom": "Cut to the chase",
+    "meaning": "Getting to the point",
+    "difficulty": "Intermediate",
+    "example": "I don't have time for this, so let's cut to the chase: are we losing money or not?"
+  },
+  {
+    "idiom": "Day to day",
+    "meaning": "Part of a usual routine",
+    "difficulty": "Easy",
+    "example": "See? These are the type of crazy customers I deal with on a day to day basis!"
+  },
+  {
+    "idiom": "Days are numbered",
+    "meaning": "Expected to be in a role or to die soon",
+    "difficulty": "Easy",
+    "example": "If you keep driving like a lunatic, your days are numbered."
+  },
+  {
+    "idiom": "Dead in the water",
+    "meaning": "Plan or project that has ceased to function and is not expected to re-activate.",
+    "difficulty": "Intermediate",
+    "example": "Without additional funding, the project is dead in the water and cannot proceed."
+  },
+  {
+    "idiom": "Dead wood",
+    "meaning": "People or things that are no longer useful or necessary",
+    "difficulty": "Easy",
+    "example": "The company is full of dead wood. They need to reinvent themselves."
+  },
+  {
+    "idiom": "Deep down",
+    "meaning": "Describing what a person really feels deep inside them",
+    "difficulty": "Easy",
+    "example": "She can seem stern but deep down she's a very kind person."
+  },
+  {
+    "idiom": "Deliver the goods",
+    "meaning": "Do what is expected or required",
+    "difficulty": "Easy",
+    "example": "Tony Soprano always delivers the goods. Not to worry."
+  },
+  {
+    "idiom": "Devil's advocate",
+    "meaning": "To present a counter argument",
+    "difficulty": "Easy",
+    "example": "I'll play devil's advocate and point out the flaws in your plan."
   }
 ]
