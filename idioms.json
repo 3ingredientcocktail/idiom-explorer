@@ -699,7 +699,7 @@
     "idiom": "Around the corner",
     "meaning": "Will happen soon.",
     "difficulty": "Easy",
-    "example": "I can't believe it's already December; Christmas is just around the corner!"
+    "example": "I can't believe it's already December; Christmas is just around the corner!."
   },
   {
     "idiom": "Back to basics",
@@ -1084,5 +1084,89 @@
     "meaning": "To present a counter argument",
     "difficulty": "Easy",
     "example": "I'll play devil's advocate and point out the flaws in your plan."
+  },
+  {
+    "idiom": "Do time (serve time)",
+    "meaning": "Spend time in prison",
+    "difficulty": "Intermediate",
+    "example": "It's not always easy to find a job after you've done time."
+  },
+  {
+    "idiom": "Don't count your chickens before they hatch",
+    "meaning": "Don't make plans for something that might not happen.",
+    "difficulty": "Hard",
+    "example": "I know the interview went well, but don't count your chickens before they hatch; wait until you get the offer letter."
+  },
+  {
+    "idiom": "Don't give up your day job",
+    "meaning": "You are not very good at something",
+    "difficulty": "Hard",
+    "example": "Wow, your singing is terrible. Don't give up your day job."
+  },
+  {
+    "idiom": "Drawing a blank",
+    "meaning": "Be unable to come up with an answer or dia",
+    "difficulty": "Easy",
+    "example": "Rodrigo asked me for my phone number and I drew a blank—I couldn't remember it."
+  },
+  {
+    "idiom": "Dropout",
+    "meaning": "Stop attending school before it is time.",
+    "difficulty": "Easy",
+    "example": "He chose to drop out of college to pursue his passion for music."
+  },
+  {
+    "idiom": "Dwell on the past",
+    "meaning": "Thinking too much about something that happened in the past.",
+    "difficulty": "Intermediate",
+    "example": "I wish my grandfather did not dwell so much on the past... but he is a Vietnam War veteran."
+  },
+  {
+    "idiom": "Eager beaver",
+    "meaning": "Enthusiastic and hard worker.",
+    "difficulty": "Easy",
+    "example": "Mark is such an eager beaver; he's always the first one in the office and the last to leave for the day."
+  },
+  {
+    "idiom": "Eat, sleep & breathe something",
+    "meaning": "Being so enthusiastic and passionate about something that you think about it all the time.",
+    "difficulty": "Intermediate",
+    "example": "Marco eat, sleeps, and breathes football. He hopes to get a sports scholarship to Stanford."
+  },
+  {
+    "idiom": "Egg head",
+    "meaning": "Studious and academic person.",
+    "difficulty": "Easy",
+    "example": "Karina was dismissed as an egghead by her colleagues just because she preferred studying over socializing."
+  },
+  {
+    "idiom": "Elbow room",
+    "meaning": "Enough space to move or work in.",
+    "difficulty": "Easy",
+    "example": "It's a small kitchen with no elbow room."
+  },
+  {
+    "idiom": "Eleventh hour",
+    "meaning": "At the very last minute or just in time.",
+    "difficulty": "Easy",
+    "example": "Tammy submitted her final project at the eleventh hour, just minutes before the midnight deadline."
+  },
+  {
+    "idiom": "Every cloud has a silver lining",
+    "meaning": "Be optimistic, even difficult times will lead to better days. Good can come from a bad situation.",
+    "difficulty": "Hard",
+    "example": "I know you're upset about losing your phone, but every cloud has a silver lining—now you can finally upgrade to a newer model."
+  },
+  {
+    "idiom": "Explore all avenues",
+    "meaning": "Investigating or examining every option.",
+    "difficulty": "Easy",
+    "example": "The police will explore every avenue to find the missing child."
+  },
+  {
+    "idiom": "Easy on the eyes",
+    "meaning": "a person who is physically attractive, or an object that is pleasant and visually appealing",
+    "difficulty": "Easy",
+    "example": "I don't know his name, but the new actor in that movie is very easy on the eyes."
   }
 ]
