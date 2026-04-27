@@ -524,7 +524,7 @@ async function showLeaderboard(playerTag, playerScore) {
     const isPlayer = s.tag === playerTag && s.score === playerScore;
 
     return `
-      <li style="${isPlayer ? "font-weight:bold; color:#2ecc71;" : ""}">
+      <li style="margin-bottom:6px; ${isPlayer ? "font-weight:bold; color:#2ecc71;" : ""}">
         ${rankLabel ? `${rankLabel} ` : ""}${s.tag} — ${s.score}${isPlayer ? " 👈 YOU" : ""}
       </li>
     `;
