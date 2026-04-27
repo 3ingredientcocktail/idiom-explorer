@@ -490,8 +490,8 @@ async function submitScore(event) {
   const tagInput = document.getElementById("playerTag");
   let tag = tagInput.value.trim().toUpperCase();
 
-  if (tag.length < 2) {
-    alert("Enter at least 2 characters");
+  if (tag.length < 3) {
+    alert("Enter at least 3 characters");
     btn.disabled = false;
     btn.textContent = "Submit Score";
     return;
