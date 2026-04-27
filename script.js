@@ -411,7 +411,7 @@ function endArcade() {
     <h2>${message}</h2>
     <h3>Your Score: ${score}</h3>
 
-    <input id="playerTag" maxlength="5" placeholder="Your tag (e.g. PZT)" />
+    <input id="playerTag" maxlength="12" placeholder="Your name (max 12 chars)" />
     <br/><br/>
     <button onclick="submitScore(event)">Submit Score</button>
     <button onclick="startArcade()">Play Again</button>
