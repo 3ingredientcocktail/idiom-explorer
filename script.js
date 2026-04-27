@@ -497,8 +497,8 @@ async function submitScore(event) {
     return;
   }
 
-  if (tag.length > 5) {
-    tag = tag.slice(0, 5);
+  if (tag.length > 12) {
+    tag = tag.slice(0, 12);
   }
 
   await saveScore(tag, score);
